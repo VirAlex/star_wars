@@ -1,0 +1,12 @@
+<div class="banner">
+  <h1 class="title">Welcome to Star Wars Loader</h1>
+</div>
+
+<div class="container">
+  <p>Consultez les infos de tous les films:</p>
+   <% @films.each do |film| %>
+    <ul>
+    <%=link_to (film.title), consultation_path(film.id) %>
+  </ul>
+  <%end%>
+</div>
