@@ -10,7 +10,9 @@ class ConsultationsController < ApplicationController
     user = JSON.parse(user_serialized)
     user['results'].each do |title|
        Consultation.create!(
-            title:    title["title"]
+            title:    title["title"],
+            synopsys: title["opening_crawl"],
+            datesortie: title["release_date"]
             )
     @films = Consultation.all
     end

@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_02_170335) do
+ActiveRecord::Schema.define(version: 2020_01_03_094217) do
 
   create_table "consultations", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "title"
+    t.string "synopsys"
+    t.date "datesortie"
   end
 
 end

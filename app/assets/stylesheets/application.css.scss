@@ -13,5 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 @import "consultations";
-@import "components/banner.scss"
+@import "components/banner.scss";
+@import "show"
